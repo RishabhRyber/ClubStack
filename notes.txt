@@ -1,0 +1,5 @@
+FOR SIGNUP SYSTEM
+ First signedusers will get stored in a temporary database with a otp sent to them via message;
+ Verification system will be like enter the otp sent in message in the mail sent
+ Mailed link will contain a randomly generated GET query and it will be stored in the temprory table to identify whome to verify;
+ Once Verified the required data will be moved to main users database;

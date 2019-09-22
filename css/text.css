@@ -1,0 +1,139 @@
+@font-face{
+  font-family:'archive';
+  src:url(fonts/Archive.otf);
+}
+
+@font-face{
+    font-family:'intro';
+    src:url(fonts/Intro.otf);
+}
+
+.wrapper {
+  position: absolute;
+  left: 48%;
+  top: -15%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 235px;
+  height: 70px;
+  white-space: nowrap;
+}
+
+.focus {
+  position: absolute;
+  top: 180%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: 'intro';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  font-size: 2vw;
+  opacity: 0.6;
+  color: #000000;
+}
+
+.mask {
+  position: absolute;
+  left: -5px;
+  top: 100px;
+  width: 70px;
+  font-family: 'intro';
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2vw;
+  clip: rect(0px, 70px, 75px, 0px);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0, #fff)) no-repeat, -webkit-gradient(linear, left top, right top, from(#fff), color-stop(0, #fff)) no-repeat, -webkit-gradient(linear, left top, right top, from(#fff), color-stop(0, #fff)) bottom left no-repeat, -webkit-gradient(linear, left top, right top, from(#fff), color-stop(0, #fff)) bottom left no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0, #fff)) bottom right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0, #fff)) bottom right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0, #fff)) top right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0, #fff)) top right no-repeat;
+  background: linear-gradient(#fff, #fff 0) no-repeat, linear-gradient(to right, #fff, #fff 0) no-repeat, linear-gradient(to right, #fff, #fff 0) bottom left no-repeat, linear-gradient(to right, #fff, #fff 0) bottom left no-repeat, linear-gradient(#fff, #fff 0) bottom right no-repeat, linear-gradient(#fff, #fff 0) bottom right no-repeat, linear-gradient(#fff, #fff 0) top right no-repeat, linear-gradient(#fff, #fff 0) top right no-repeat;
+  background-size: 10px 2px, 2px 10px, 2px 10px, 10px 2px, 2px 10px, 10px 2px, 10px 2px, 2px 10px, 10px 2px;
+  color: #fff;
+  padding: 5px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: mask 4.5s ease infinite alternate;
+          animation: mask 4.5s ease infinite alternate;
+}
+
+.text {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-animation: text 4.5s ease infinite alternate;
+          animation: text 4.5s ease infinite alternate;
+}
+
+@-webkit-keyframes mask {
+  to {
+    -webkit-transform: translateX(165px);
+            transform: translateX(165px);
+  }
+}
+
+@keyframes mask {
+  to {
+    -webkit-transform: translateX(165px);
+            transform: translateX(165px);
+  }
+}
+@-webkit-keyframes text {
+  to {
+    -webkit-transform: translateX(-165px);
+            transform: translateX(-165px);
+  }
+}
+@keyframes text {
+  to {
+    -webkit-transform: translateX(-165px);
+            transform: translateX(-165px);
+  }
+}
+@media screen and (max-width: 800px) {
+    /*.mask, .focus{
+        font-size: 4vw;
+    }
+    .focus{
+        margin-top: 10%;
+    }
+    .mask{
+        top: unset;
+        margin-top: 5%;
+    }
+    .wrapper{
+        top: -40%;
+        width: 100%;
+        left: 80%;
+        position: relative;
+        height: auto;
+    }
+    @-webkit-keyframes mask {
+      to {
+        -webkit-transform: translateX(150%);
+                transform: translateX(150%);
+      }
+    }
+
+    @keyframes mask {
+      to {
+        -webkit-transform: translateX(150%);
+                transform: translateX(150%);
+      }
+    }
+    @-webkit-keyframes text {
+      to {
+        -webkit-transform: translateX(-190%);
+                transform: translateX(-190%);
+      }
+    }
+    @keyframes text {
+      to {
+        -webkit-transform: translateX(-190%);
+                transform: translateX(-190%);
+      }
+    }*/
+    .wrapper{
+        display: none;
+    }
+}
